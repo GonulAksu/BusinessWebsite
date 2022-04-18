@@ -1,0 +1,172 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+html{
+    font-size: 6px;
+}
+body{
+    font-family: 'Zen Antique Soft', serif,'Irish Grover', cursive;
+    font-size:1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: rgb(19, 38, 57);
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.clearfix::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+.container{
+    width:100%;
+  /*width: 1140px;*/
+  /* 1140 px lik navbar'ı sağdan soldan eşit ayarlayacak sayfaya*/
+  margin-left: auto;
+  margin-right: auto;
+  padding-right:8px ;
+  padding-left:8px;
+
+}
+
+
+/* Responsive css nav */
+.nav{
+
+    padding:16px;
+    font-size:3rem;
+    background-color: rgb(52,58,64);
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+/* float kullandığımız için clear kullanmak zorunda kalabiilirz */
+.nav-links{
+    float: right;
+}
+#nav-logo{
+    float: left;
+}
+.nav-a{
+    color: white;
+    transition: color .3sn;
+}
+.nav-a:hover{
+    color: darkgray;
+}
+.nav-link{
+   padding-left: 3px;
+   display: inline-block;
+
+}
+.nav-link:last-child{
+    display: none;
+}
+@media (max-width:768px){
+    /* 600px ve altında */
+    .nav-link{
+        display:none;
+     }
+
+    .nav-link:last-child{
+        display:inline-block;
+    }
+ 
+    .responsive .nav-link{
+        display: block;
+        
+    }
+    .responsive .links{
+        padding-top: 30px;
+        text-align:right;
+       
+    }
+    
+    .responsive .nav-link:last-child{
+        position: absolute;
+        top:16px;
+        right:16px;
+    }
+}
+/*nav listeye bir class vericem bars iconuna tıkladığımızda class eklenecek tıkladığımızda çıkartılacak
+responsive classında elemanlar alt alta gözükecek*/
+.logo{
+    font-weight:700;
+    color: white;
+    
+}
+.logo:hover{
+    text-shadow: 1px 1px 6px white;
+}
+
+
+/* slide Carousel */
+.carousel-caption{
+    position:absolute;
+    top:30%;
+    right:30%;
+    
+    font-size: 4rem;
+}
+.button{
+    background-color:rgb(15, 31, 61);
+    padding: 8px 13px;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    margin-top: 12px;
+   
+}
+
+.button:hover{
+    background-color: rgb(30, 63, 123);
+}
+
+.carousel-item img{
+    width: 100%;
+    height:95vh;
+    border-bottom: 1px solid white; 
+
+    /* vh ekranın görünür kısmını tanımlar */
+}
+@media (max-width:768px){
+    .carousel-caption{
+        position:absolute;
+        top:30%;
+        right:20%;
+        
+        font-size: 3rem;
+    }
+}
+@media (max-width:576px){
+    .carousel-caption{
+        position:absolute;
+        top:40%;
+        right:40%;
+        
+        font-size: 2rem;
+    }
+}
+/* footer */
+footer{
+    margin-top: 0;
+    /* background-color: rgb(15, 31, 61); */
+    padding: 12px;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+

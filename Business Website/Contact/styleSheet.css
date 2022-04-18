@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 12px;
+}
+body{
+    font-family: 'Zen Antique Soft', serif,'Irish Grover', cursive;
+    font-size:0.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+/* navbar */
+nav{
+    padding:16px;
+    font-size:1.5rem;
+    background-color: rgb(52,58,64);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.logo a{
+    color: white;
+    font-weight:700;
+}
+.logo a:hover{
+    color: white;
+    text-decoration:none;
+    cursor: pointer;
+}
+.nav-linkq a{
+    color:white;
+}
+.nav-linkq a:hover{
+    color:darkgray;
+    text-decoration: none;
+}
+.nav-linkq{
+    display: inline-block;
+    padding-left: 3px;
+}
+nav div{
+    float: right;
+}
+.nav-linkq:last-child{
+    display: none;
+}
+
+@media (max-width:768px){
+   
+    .nav-linkq:last-child{
+        display: inline-block;
+    }
+    .nav-linkq{
+        display: none;
+    }
+
+    .responsive .nav-linkq{
+        display: block;
+    }
+    .responsive .links{
+        text-align:right;
+        padding-top:30px;
+    }
+
+    .responsive .nav-linkq:last-child{
+        position: absolute;
+        top:16px;
+        right:16px;
+    }
+
+
+}
+
+
+
+/* footer */
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+   
+    background-color: rgb(52,58,64);
+    padding: 10px;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+}
